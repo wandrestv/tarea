@@ -61,19 +61,19 @@ def frecuencia(numero,digito):
    return cantidad
 
 def factorial(numero):
-   f=1
-   if numero!=0:
-       for i in range(1,numero+1):
-           f=f*i
-   return f
+    f=1
+    if numero!=0:
+        for i in range(1,numero+1):
+            f=f*i
+    return f
 
 def sumaDigitos(numero):
-  suma=0
-  while numero!=0:
-      digito=numero%10
-      suma=suma+digito
-      numero=numero//10
-  return suma
+    suma=0
+    while numero!=0:
+        digito=numero%10
+        suma=suma+digito
+        numero=numero//10
+    return suma
 
 mayor=0
 numero=int(input("Número primo: "))
@@ -82,6 +82,6 @@ while primo(numero):
     digito=int(input("Dígito: "))
     print("El",digito,"aparece",frecuencia(numero,digito),"veces")
     if numero > mayor:
-          mayor=numero
+        mayor=numero
     numero=int(input("Número primo: "))
 print("Factorial de",mayor,":",factorial(mayor))

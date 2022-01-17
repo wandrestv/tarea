@@ -48,5 +48,3 @@ capacidad = float(input("Capacidad del tanque: "))
 km_l = float(input("Rendimiento (Km por litro): "))
 recorrido = float(input("Km totales a recorrer: "))
 print("Seran necesarios", recorrido / (capacidad*km_l),"tanques")
-
-

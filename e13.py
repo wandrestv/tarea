@@ -22,4 +22,3 @@ for anio in range(anioInicio, anioFin + 1):
         continue
     if anio % 100 != 0 or anio % 400 == 0:
         print(anio)
-        

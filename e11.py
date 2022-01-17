@@ -31,3 +31,18 @@ while numero != 0:
     numero = int(input("Número: "))
 print("Total de digitos pares: ",totalPares)
 print("Total de digitos impares:",totalImpares)
+#***
+digitosEnLaLinea = 0
+cantLineas = 0
+titulo = input("Título del libro: ")
+while titulo != "*":
+    if titulo == "/":
+        cantLineas += 1
+        print("Linea completa. Aparecen", digitosEnLaLinea, "digitos")
+        digitosEnLaLinea = 0
+    else:
+        for caracter in titulo:
+            if caracter in "0123456789":
+                digitosEnLaLinea += 1
+    titulo = input("Título del libro: ")
+print("Fin. Se leyeron", cantLineas, "linas")
